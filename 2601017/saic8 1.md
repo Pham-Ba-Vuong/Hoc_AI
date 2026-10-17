@@ -79,12 +79,14 @@ Chu trình huấn luyện: dự đoán → tính Loss → lan truyền gradient 
 - - Perceptron ① (z₁ = OR): (w₀, w₁, w₂) = (−0,5; 1; 1)
 - - Perceptron ② (z₂ = NAND): (w₀, w₁, w₂) = (1,5; −1; −1)
 - - Perceptron ③ (AND trên z₁, z₂): (w₀, w₁, w₂) = (−1; 1; 1)
+
 | x1 | x2 | s1 | z1 | s2 | z2 | s3=-1+z1+z2 | y |
 |----|----|----|----|----|----|-------------|---|
 | 0 | 0 | -0.5 | -1 | 1.5 | 1 | -1 | -1(F) |
 | 1 | 0 | 0.5 | 1 | 0.5 | 1 | 1 | 1(T) |
 | 0 | 1 | 0.5 | 1 | 0.5 | 1 | 1 | 1(T) |
 | 1 | 1 | 1.5 | 1 | -0.5 | -1 | -1 | -1(F) |
+
 -   Kết quả đúng XOR. Ở không gian mới (z₁, z₂) hai lớp tách được bằng một đường thẳng, nên đây chính là “bẻ cong mặt phẳng”.
 
 
